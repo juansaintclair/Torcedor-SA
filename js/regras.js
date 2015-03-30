@@ -198,15 +198,14 @@ $(function () {
     });
 
     $(window).scroll(function () {
-        window.travarEfeitosShrink = false;
-        if (!window.travarEfeitosShrink) {
+        if (!TSA.travarEfeitosShrink) {
             if ($(document).scrollTop() > 50) {
 
                 $('nav').find('.menu-superior').toggle("size", 1000);
 
                 $('nav').addClass('shrink');
                 $('.pace-inactive').css('display', 'none');
-                window.travarEfeitosShrink = true;
+                TSA.travarEfeitosShrink = true;
             } else {
 
                 $('nav').removeClass('shrink');
@@ -221,5 +220,9 @@ $(function () {
 
 
 });
+
+var TSA = {
+	travarEfeitosShrink: false
+};
 
 /*$('.pace-inactive').css('display', 'none');*/

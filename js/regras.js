@@ -199,11 +199,11 @@ $(function () {
 
 	$(window).scroll(function () {
 			if ($(document).scrollTop() > 50) {
-				$('nav').find('.menu-superior').fadeOut('slow');
+				$('nav').find('.menu-superior').hide();
 				$('nav').addClass('shrink');
+                /*$('nav').find('.menu-inferior').animate({height: "10px"}, 500)*/
 				$('.pace-inactive').css('display', 'none');
 			} else {
-
 				$('nav').removeClass('shrink');
 				$('nav').find('.menu-superior').fadeIn('slow');
 				$('.pace-inactive').css('display', 'block');

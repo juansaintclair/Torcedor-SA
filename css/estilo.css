@@ -165,22 +165,46 @@ hr {
 }
 */
 
-.shrink .form-group {
-    margin-left: 10px;
+
+
+.shrink .escudos {
+   margin-top: 0;
 }
+
+.shrink .escudos a:link,
+.shrink .escudos a:visited,
+.shrink .escudos a:hover,
+.shrink .escudos a:active {
+  color: #d1d1d1;
+    display: block;
+    padding-left: 10px;
+}
+
 
 .shrink .form-control {
     font-size: 10px;
 }
 
 .shrink .menu-inferior {
-    /* margin-top: -79px;*/
-    
-    padding-top: 15px;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    margin-top: -60px;
+}
+
+.shrink .form-control-feedback {
+    height: 10px;
+}
+
+.shrink .form-group {
+    margin-bottom: 0!important;
 }
 
 .shrink .menu-sessoes ul {
     padding-left: 0;
+}
+
+.shrink .input-seardh {
+    height: 10px;
 }
 
 nav.navbar.shrink {
@@ -188,10 +212,17 @@ nav.navbar.shrink {
     border-bottom: 4px solid #eea521;
 }
 
+.shrink .menu-inferior ul li a {
+    font-size: 12px;
+}
+
 nav.shrink a {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-    font-size: 12px;
+}
+
+.shrink #sub-menu-show #link-azul-escuro {
+    font-size: 22px!important;
 }
 
 nav.shrink .navbar-brand {
@@ -265,6 +296,10 @@ nav.shrink .navbar-toggle {
 
 .escudos {
     margin-top: 15px;
+}
+
+.escudos a {
+    display: none;
 }
 
 .menu-inferior-podcast,
@@ -370,6 +405,33 @@ nav.shrink .navbar-toggle {
 #sub-menu-show .conteudo-noticia .link-cinza,
 .container-submenu-meio p {
     padding-top: 10px;
+}
+
+.publicidade-submenu-grande {
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+
+.publicidade-submenu-grande .img-publicidade-submenu {
+    padding: 0;
+    margin: 0;
+}
+
+.publicidade-txt-submenu {
+    margin-top: 40px;
+    font-size: 10px;
+    text-align: left;
+    width: 10px;
+}
+
+.publicidade-submenu-grande .publicidade-txt-submenu {
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+    float: left;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .conteudo-noticia .container-noticia-inferior .link-azul-escuro,
@@ -904,7 +966,7 @@ ul li a img {
     background-color: #FFF;
     width: 940px;
     border-radius: 3px;
-    /*display: none;*/
+    display: none;
     
     border: 1px solid #f3f3f3;
     margin-top: 5px;

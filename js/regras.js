@@ -115,7 +115,8 @@ $(function () {
         slideSpeed: 200,
         paginationSpeed: 800,
         rewindSpeed: 1000,
-        mouseDrag: false
+        mouseDrag: false,
+        transitionStyle:'fade'
 
     });
 

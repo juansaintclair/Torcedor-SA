@@ -86,6 +86,11 @@ $(function () {
 
 
                 if (SubMenuShow === false) {
+                    var left = ($(this).width() / 2) - 30;
+
+                    $('.arrow-up, .arrow-up-border').css({
+                        'left': left.toString() + 'px'
+                    });
                     $('#sub-menu-show, .arrow-up, .arrow-up-border').css('display', 'block');
                     $('#menu-' + href.substring(1)).css('display', 'block');
                     SubMenuShow = true;

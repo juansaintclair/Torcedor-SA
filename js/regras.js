@@ -116,7 +116,7 @@ $(function () {
         paginationSpeed: 800,
         rewindSpeed: 1000,
         mouseDrag: false,
-        transitionStyle:'fade'
+        transitionStyle: 'fade'
 
     });
 
@@ -190,7 +190,7 @@ $(function () {
                 "bottom": "+=7px"
             }, 200);
 
-            $(this).addClass('img-shadow-videos');
+            /* $(this).addClass('img-shadow-videos'); */
             travarMouseOver = true;
         }
 
@@ -248,6 +248,8 @@ $(function () {
     $('.efeito-cima-direita').mouseleave(function () {
         $(this).find('span a').removeClass('efeito-slider-maisNoticias-a-hover');
     });
+
+
 
 
 

@@ -242,7 +242,7 @@ $(function () {
 	});
 
 	/* Efeito hover das noticias do topo/direita */
-	var efeitoCimaDireita = $('.efeito-cima-direita div:not(.link-cinza, .conteudo_noticia)');
+	var efeitoCimaDireita = $('.efeito-cima-direita div:not(.link-cinza):not(.conteudo-noticia)');
 	efeitoCimaDireita.mouseover(function () {
 		var self = $(this).parents('.efeito-cima-direita');
 		self

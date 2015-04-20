@@ -37,7 +37,6 @@ $(function () {
 		travaMenu = false;
 	}
 
-
 	/* Limpa o conteúdo interno do submenu */
 	function limparMenu() {
 		$('#sub-menu-show .row>div, #sub-menu-show').not('[class*="col-xs"]').css('display', 'none');
@@ -124,6 +123,8 @@ $(function () {
 		pagination: false
 	});
 
+	$('#slider-videos .owl-item').removeAttr('style');
+
 	$("#slider-mais-noticias").owlCarousel({
 		pagination: false
 	});
@@ -190,7 +191,7 @@ $(function () {
 				"bottom": "+=7px"
 			}, 200);
 
-			/* $(this).addClass('img-shadow-videos'); */
+			$(this).addClass('img-shadow-videos');
 			travarMouseOver = true;
 		}
 

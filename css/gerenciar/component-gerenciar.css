@@ -1,0 +1,156 @@
+/* Iconfont made with icomoon.com */
+
+
+/* reset  list style */
+.cbp-tm-menu,
+.cbp-tm-menu ul {
+	list-style: none;
+}
+
+/* set menu position; change here to set to relative or float, etc. */
+.cbp-tm-menu {
+	display: block;
+	width: 100%;
+	margin: 0; 
+}
+
+
+/* first level menu items */
+.cbp-tm-menu > li {
+	display: inline-block;
+	position: relative;
+}
+
+.cbp-tm-menu > li > a {
+	/*padding: 0 0.3em;*/
+	display: block;
+	color: #efa217!important;
+}
+
+
+/* sumbenu with transitions */
+.cbp-tm-submenu {
+	position: absolute!important;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	padding: 0;
+	text-align: left;
+	pointer-events: none;
+	-webkit-transition: visibility 0s, opacity 0s;
+	-moz-transition: visibility 0s, opacity 0s;
+	transition: visibility 0s, opacity 0s;
+}
+
+.cbp-tm-show .cbp-tm-submenu {
+	right: 0;	
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	-webkit-transition: visibility 0s, opacity 0.3s;
+	-moz-transition: visibility 0s, opacity 0.3s;
+	transition: visibility 0s, opacity 0.3s;
+}
+
+.cbp-tm-show-above .cbp-tm-submenu {
+	bottom: 100%;
+	
+}
+
+.cbp-tm-show-below .cbp-tm-submenu {
+	top: 100%;
+	
+}
+
+/* extreme cases: not enough space on the sides */
+.cbp-tm-nospace-right .cbp-tm-submenu {
+	right: 0;
+	left: auto;
+}
+
+.cbp-tm-nospace-left .cbp-tm-submenu {
+	left: 0;
+}
+
+/* last menu item has to fit on the screen */
+.cbp-tm-menu > li:last-child .cbp-tm-submenu {
+	right: 0;
+}
+
+/* 	
+arrow: depending on where the menu will be shown, we set 
+the right position for the arrow
+*/
+
+.cbp-tm-submenu:after {
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.cbp-tm-show-above .cbp-tm-submenu:after {
+	top: 100%;
+	margin-top: -10px;
+}
+
+.cbp-tm-show-below .cbp-tm-submenu:after,
+.cbp-tm-show-below-dois .cbp-tm-submenu:after {
+	bottom: 100%;
+	margin-bottom: 0px;
+}
+
+.cbp-tm-submenu:after {
+	border-color: transparent;
+	border-width: 10px;
+	margin-left: -10px;
+	
+}
+
+
+.cbp-tm-show-above .cbp-tm-submenu:after {
+	border-top-color: #fff;
+}
+
+.cbp-tm-submenu > li {
+	display: block;
+	background: #fff;
+}
+
+.cbp-tm-submenu > li > a {
+	display: block;
+	font-size: 12px;
+	position: relative;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+
+/* the icons (main level menu icon and sublevel icons) */
+.cbp-tm-submenu li a:before,
+.cbp-tm-menu > li > a:before {
+	font-family: 'cbp-tmicons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+}
+
+.cbp-tm-submenu li a:before {
+	position: absolute;
+}
+
+/* Media Queries */
+@media screen and (max-width: 55.6875em) {
+	.cbp-tm-menu {
+		font-size: 80%;
+	}
+}
+

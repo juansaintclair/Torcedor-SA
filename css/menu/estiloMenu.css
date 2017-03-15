@@ -1,0 +1,38 @@
+/* Estilo do Menu */
+
+.mp-level {
+	background: #FFF;
+}
+
+.mp-menu ul li > a {
+	text-transform: lowercase;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	box-shadow: none;
+}
+
+.mp-level > ul > li:first-child > a {
+    box-shadow: none;
+}
+
+
+.mp-menu > .mp-level > ul > li.setamenu::after {
+    font-family: 'FontAwesome';
+    position: absolute;
+    content: "\f105";
+    margin-top:-27px;
+    right: 10px;
+    color: rgba(0,0,0,0.3);
+    z-index: -1;
+}
+
+.mp-back::after {
+    font-family: 'FontAwesome';
+    position: absolute;
+    content: "\f104";
+    right: 10px;
+    font-size: 1.3em;
+    color: rgba(0,0,0,0.3);
+}
+
